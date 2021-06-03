@@ -33,7 +33,7 @@ function gameStart() {
 
     index = 0;
     correctAnswers = 0;
-    timeRemaining = 20000;
+    timeRemaining = 75;
 
     timer();
     loadQuestions();
