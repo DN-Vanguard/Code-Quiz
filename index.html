@@ -18,34 +18,36 @@
         <p>Time: <span id="timer">75</span> seconds</p>
     </header>
 
-    <main>
+    <main class="contentBox">
         <!-- start screen that will present the basic outline of what the challenge holds. -->
         <section id="start">
             <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions within the time limit.
-                <u>Keep in mind that <span>INCORRECT</span> answers will penalize your overall score <span>AND</span> time by 10 seconds!</u>
-            </p>
+            <p>Try to answer the following code-related questions within the time limit.</p>
+            <p><u>Keep in mind that <span>INCORRECT</span> answers will penalize your overall score <span>AND</span> time by 10 seconds!</u></p>
             <button id="startButton">Start Quiz</button>
         </section>
-        <!-- the question screen will present 5 questions pulled from a separate js file as well as give mmultiple choice options to select the correct answer. -->
-        <section id="questionsScreen" class="hidden">
-            <h1 id="questions">X</h1> <!-- The X is a placeholder for the questions that appear in questions.js -->
-            <div id="multipleChoiceOptions"></div>
-        </section>
-        <!-- once the user is finished, they will see their score and be prompted to submit their initials, thus saving their score on their local page -->
-        <section id="finished" class="hidden">
-            <h1>All done!</h1>
-            <p>Your final score is <span id="correctScore">#</span> /5 correct answers.</p> <!-- The X is a placeholder for the amount of correct answers -->
-            <form id="initialsForm">
-                <label>Enter initials:</label>
-                <input type="text" id="initials">
-                <input type="submit" value="Submit">
-            </form>
-        </section>
 
-        <!-- pop ups of when a user selects the right or wrong answer -->
-        <h2 class="hidden correct">Nice Job!</h2>
-        <h2 class="hidden wrong">Better luck next time!</h2>
+        <div class="stylingBlock">
+            <!-- the question screen will present 5 questions pulled from a separate js file as well as give mmultiple choice options to select the correct answer. -->
+            <section id="questionsScreen" class="hidden">
+                <h1 id="questions">X</h1> <!-- The X is a placeholder for the questions that appear in questions.js -->
+                <div id="multipleChoiceOptions"></div>
+            </section>
+            <!-- once the user is finished, they will see their score and be prompted to submit their initials, thus saving their score on their local page -->
+            <section id="finished" class="hidden">
+                <h1>All done!</h1>
+                <p>Your final score is <span id="correctScore">#</span>/5 correct answers.</p> <!-- The X is a placeholder for the amount of correct answers -->
+                <form id="initialsForm">
+                    <label>Enter initials:</label>
+                    <input type="text" id="initials">
+                    <input type="submit" id="submit" value="Submit">
+                </form>
+            </section>
+        
+            <!-- pop ups of when a user selects the right or wrong answer -->
+            <h2 class="hidden correct">Nice Job!</h2>
+            <h2 class="hidden wrong">Better luck next time!</h2>
+        </div>
     </main>
 
     <!-- linked javascript files -->
