@@ -21,5 +21,5 @@
 https://dn-vanguard.github.io/Code-Quiz/
 
 ## Screenshots
-! [starting_page] (assets/images/startingPage.png)
-! [highscore_page] (assets/images/highscorePage.png)
+![starting_page](./assets/images/startingPage.png)
+![highscore_page](./assets/images/highscorePage.png)
