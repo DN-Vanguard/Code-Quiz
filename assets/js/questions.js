@@ -23,7 +23,7 @@ var questions = [
     },
 
     {
-        question: "Arrays in Javascript can be used to store _______.",
+        question: "Arrays in Javascript can be used to store ________.",
         choices: [
             "numbers and strings",
             "other arrays",
@@ -34,7 +34,7 @@ var questions = [
     },
 
     {
-        question: "String values must be enclosed within _______ when being assigned to variables.",
+        question: "String values must be enclosed within ________ when being assigned to variables.",
         choices: [
             ", / commas",
             "{} / curly brackets",

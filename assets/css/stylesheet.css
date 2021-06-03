@@ -1,0 +1,55 @@
+:root{
+    --backgroundColor: #5f119e;
+    --textColor: white;
+    --hoverColor: #724a92;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 120%;
+    padding: 10px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+h1 {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+
+#start{
+    margin: auto;
+    width: 750px;
+    text-align: center;
+    padding-top: 100px;
+}
+#start h1 {
+    padding: 25px;
+}
+button {
+    margin: 30px;
+    background-color: var(--backgroundColor);
+    color:var(--textColor);
+}
+button:hover{
+    background-color: var(--hoverColor);
+}
+section span {
+    font-weight: bold;
+}
+#questions{
+
+}
+#finish{
+
+}
+
+.hidden{
+    /* display: none; */
+}

@@ -13,14 +13,32 @@
 <body>
     <header>
         <a href="./assets/html/highscore.html">View Highscores</a>
-        <p>Correct: 0</p>
-        <p>Time: 60 seconds</p>
+        <p>Time: 75 seconds</p>
     </header>
 
     <main>
-        <section id="start"></section>
-        <section id="questions"></section>
-        <section id="finish"></section>
+
+        <section id="start">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit.
+                <u>Keep in mind that <span>INCORRECT</span> answers will penalize your score <span>AND</span> time by 10 seconds!</u>
+            </p>
+            <button>Start Quiz</button>
+        </section>
+
+        <section id="questions" class="hidden">
+
+        </section>
+
+        <section id="finish" class="hidden">
+            <h1>All done!</h1>
+            <p>Your final score is </p>
+            <form>
+                <label><b>Enter initials:</b></label>
+                <input type="text">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
     </main>
 
     <script src="./assets/js/questions.js"></script>
