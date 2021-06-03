@@ -21,6 +21,7 @@ var correctScoreSpan = document.querySelector("#correctScore");
 var formEl = document.querySelector("#initialForm");
 var initalsEl = document.querySelector("#initials");
 
+
 //updates the timer to its current value
 function updateTimer(){
     timerEl.textContent = timeRemaining;
@@ -124,7 +125,7 @@ function gameOver(){
     
     correctScoreSpan.textContent = correctAnswers;
 }
-
+//Saves users score locally, and prepares to show once it is called when pressing the submit button.
 function score(event){
     event.preventDefault();
 
@@ -140,6 +141,7 @@ function score(event){
 
     window.location = "assets/html/highscore.html";
 }
+
 
 //Event Listeners
 startButtonEl.addEventListener("click", gameStart);
