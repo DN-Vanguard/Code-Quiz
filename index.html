@@ -13,7 +13,7 @@
 <body>
     <header>
         <a href="./assets/html/highscore.html">View Highscores</a>
-        <p>Time: 75 seconds</p>
+        <p>Time: <span id="timer">75</span> seconds</p>
     </header>
 
     <main>
@@ -21,24 +21,29 @@
         <section id="start">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit.
-                <u>Keep in mind that <span>INCORRECT</span> answers will penalize your score <span>AND</span> time by 10 seconds!</u>
+                <u>Keep in mind that <span>INCORRECT</span> answers will penalize your overall score <span>AND</span> time by 10 seconds!</u>
             </p>
-            <button>Start Quiz</button>
+            <button id="startButton">Start Quiz</button>
         </section>
 
-        <section id="questions" class="hidden">
-
+        <section id="questionsScreen" class="hidden">
+            <h1 id="questions">X</h1> <!-- The X is a placeholder for the questions that appear in questions.js -->
+            <div id="multipleChoiceOptions"></div>
         </section>
 
-        <section id="finish" class="hidden">
+        <section id="finished" class="hidden">
             <h1>All done!</h1>
-            <p>Your final score is </p>
-            <form>
+            <p>Your final score is <span id="correctScore">#</span> /5 correct answers.</p> <!-- The X is a placeholder for the amount of correct answers -->
+            <form id="initialForm">
                 <label><b>Enter initials:</b></label>
-                <input type="text">
+                <input type="text" id="initials">
                 <input type="submit" value="Submit">
             </form>
         </section>
+
+        <h2 class="hidden correct">Nice Job!</h2>
+        <h2 class="hidden wrong">Better luck next time!</h2>
+
     </main>
 
     <script src="./assets/js/questions.js"></script>
