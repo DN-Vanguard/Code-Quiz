@@ -18,8 +18,8 @@ var index;
     //Ending
 var finishedEl = document.querySelector("#finished");
 var correctScoreSpan = document.querySelector("#correctScore");
-var formEl = document.querySelector("#initialForm");
-var initalsEl = document.querySelector("#initials");
+var formEl = document.querySelector("#initialsForm");
+var initialsEl = document.querySelector("#initials");
 
 
 //updates the timer to its current value
@@ -131,8 +131,7 @@ function score(event){
 
     var scoreData = {
         initials: initialsEl.value,
-        answerScore: correctAnswers,
-        timeScore: timeRemaining
+        answerScore: correctAnswers
     };
 
     var storedScores = JSON.parse(localStorage.getItem("storedScores")) || [];
